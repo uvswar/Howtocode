@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Guide To CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet"> <script>
+            
+        // Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+        </script>
+        
+        <style>
+            
+         p{
+          font-family: 'Quicksand',sans-serif;
+            font-size:16px;
+        }
+        
+        h1{
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h3{
+        font-family: 'Raleway', sans-serif;
+            
+        }
+			
+			.padTop{
+				padding-top: 5%;
+			}
+			
+			.padFin{
+				padding-bottom: 3%;
+			}
+            
+        </style>
+        </head>
+    <body>
+        
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="HTML.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HTML</a>
+    <a href="CSS.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CSS</a>
+    <a href="JavaScript.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JavaScript</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navMain" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="HTML.html" class="w3-bar-item w3-button w3-padding-large">HTML</a>
+    <a href="CSS.html" class="w3-bar-item w3-button w3-padding-large">CSS</a>
+    <a href="JavaScript.html" class="w3-bar-item w3-button w3-padding-large">Javascript</a>
+   
+  </div>
+</div>
+<br>
+
+        <div class="w3-container">
+            <br>
+        <h1 class="w3-center padTop">Let's Begin</h1>
+            </div>
+        <p class="w3-center w3-container">Css is known as being the ultimate styling language. It allows you to do almost anything in combination with other languages. For example, if you were to combine HTML and CSS you would be able to set fonts and font-sizes of your text or maybe even alter link colors. We briefly discussed CSS in our HTML section but that was mainly inline and internal styling. In this tab we're discover even further.</p>
+        <br>
+        <p class="w3-center w3-container">Now you may be wondering how to actually set up a css document. I showed you that HTML starts off the "DOCTYPE html" tag but if you were wondering CSS doesn't require anything. Although you may want to save your file as a CSS file before beginning. In case you may not know how to do that simply add ".css " after the file name.  </p>
+        
+        <br>
+        
+        <div class="w3-center w3-container">
+            <!-- Immporting External Sheets -->
+        <h3>Importing External Style Sheets</h3>
+            <p>To begin, we are going to save our file as "style.css". This going to help us in the future as we import the file into our HTML document. Typically you would import your external style sheet so reduce clutter and extensive documents. (It's also healthy to be organized)</p>
+            <br><p>You can import your css file with the link as shown:</p>
+            <br>
+            <img src="img/importingcss.png" class="w3-round" alt="importing css tutorial">
+            <br>
+            <p>And that's it! Now you can manipulate your CSS file at anytime and all changes will be made your HTML document.</p>
+            <br>
+            
+            <!-- COLORS --> 
+            
+            <h1>Colors</h1>
+            <br>
+            <p>You can use colors to style every element within a HTML document using CSS. There are about 140 standard color names that you can use to define those elements. This is extremely helpful because it eliminates the need for hexadecimal tags or color codes for short.</p>
+            <br>
+            <h3>Background Colors</h3>
+            <p>Style the background color using:</p>
+            <img src="img/backgroundcolorcss.png" class="w3-round" alt="backgroundcolor tutorial">
+            <br>
+            <p>As you can see I was able to change the background color of the body,heading, and paragraph tags. Remember this works for every element including h1-h6 tags. </p>
+            <br>
+            <h3>Text Colors</h3>
+            <br>
+            <p>You can also set the color of text as shown:</p>
+            <img src="img/textcolorcss.png" class="w3-round" alt="text color tutorial">
+            <br>
+            <p>Here I changed all the h1 tags with text inside to be beige and all my paragraphs have green text color.</p>
+            
+            <br>
+            <!-- Border Colors -->
+            <h3>Border Colors </h3>
+            <p>We can specify border colors on several items. This includes tables, headings, paragraphs, divs, and even section tags. 
+            </p>
+            <br>
+            <p>For example:
+            </p>
+            <img src="img/bordercolorscss.png" class="w3-round" alt="border colors tutorial">
+            <p>I defined all h1 tags, tables, and paragraphs with a different border type and color. The first attribute which is in green represents the boldness of the border, the second attribute represents the type of border (dashed or solid... etc.) and the final attribute represents the color of the border line. I even managed to define a div tag. To do so you get the id name, in this case it was "intro" so we put a "#" in front. If this was a class then we would use a "." before the tag.</p>
+            
+            <br>
+            <h1>Backgrounds</h1>
+            <p>There's multiple things you can add to your website using css background properties. We have already discussed background color so let's go over a few more.</p>
+            <br>
+            <!-- Background Images -->
+            
+            <h3>Background Images</h3>
+            <p>You may not have known but instead of colors you are able to use pictures as backgrounds as well. You can do so simply by:</p>
+            <br>
+            <img src="img/Backgroundimagescss.png" class="w3-round" alt="background images tutorial">
+            <br>
+            <p>This is simple you could just replace the file in the quotations with your file and now you have your own background image.</p>
+            <br>
+            <!-- Background repeating-->
+            <h3>Background Repeating</h3>
+            <p>There may be instances where the picture size will fall short of the screen size and the website will try to make up for it by repeating the image across the screen. By default the image will repeat both horizontally and vertically to compensate. But there are ways to either choose to just repeat vertically or to only repeat horizontally or to not repeat at all.</p>
+            <br>
+            <img src="img/backgroundrepeatcss.png" class="w3-round" alt="background repeat tutorial">
+            
+            <br>
+            <h3>Background Positioning</h3>
+            <p>We cam also specify positioning of background images for example if you want it centered of wrapped with text.</p>
+            <br>
+            <img src="img/backgroundpositioncss.png" class="w3-round" alt="background position tutorial">
+            <br>
+            <h3>Borders</h3>
+            <p>There several border styles and values you can use to define border: </p>
+            <ul>
+            <li>dotted - Defines a dotted border</li>
+            <li>dashed - Defines a dashed border</li>
+            <li>solid - Defines a solid border</li>
+            <li>double - Defines a double border</li>
+            <li>none - Defines no border</li>
+            <li>hidden - Defines a hidden border</li>
+            </ul>
+            <br>
+            <p>For example:</p>
+            <br>
+            <img src="img/borderscss.png" class="w3-round" alt="borders tutorials">
+            <br>
+            <p>You may also style individual parts of the border , as shown here:</p>
+            <br>
+            <img src="img/borderssidescss.png" class="w3-round" alt="individual border sides">
+            <br>
+            <p>It is possible to create border styles as well for example you can use a combination with other properties such as the background property.</p>
+            <br>
+            <p>For example:</p>
+            <br>
+            <img src="img/stylingborderscss.png" class="w3-round" alt="styling borders tutorial">
+            <br>
+            <h3>Padding</h3>
+            <p>Padding is used to create space around an element's content. You can add space above the object , below the object , or even around the object.</p>
+            <br>
+            <img src="img/paddingcss.png" class="w3-round" alt="padding tutorials">
+            <br>
+            <h3>Height and Width</h3>
+            <p>You can use the height and width properties to define sizing of elements. </p>
+            <br>
+             <img src="img/heightandwidthcss.png" class="w3-round" alt="height and width tutorial">
+            <p>Again here you may also see that percentages and pixels are interchangable. Although, using percentages are much more efficent when defining objects for several screen sizes.</p>
+            <br>
+            <h3>Text</h3>
+            <p>You can define text with several properties and attributes, inclduing: colors, text alignment, fonts, letter spacing and much more. </p>
+            <br>
+            <img src="img/textcss.png" class="w3-round" alt="text tutorial">
+            <br>
+            <h3>Links</h3>
+            <p>You may not be aware but there several ways of styling links and not just the basic blue color and underline.</p>
+            <p>For example:</p>
+            <br>
+            <img src="img/linkscss.png" class="w3-round" alt="Links Tutorial">
+            <br>
+            <h3>Positioning</h3>
+            <p>Positioning is also a key property when it comes to developing websites. There are 5 position types: </p>
+            <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+            </ul>
+            <br>
+            <img src="img/Positioningcss.png" class="w3-round" alt="Positioning Tutorials">
+            <br>
+            <h3>Floating</h3>
+            <p>The float property is also used for positioning on webpages it includes left, (floats left of the container) and right, (floats right of the container)</p>
+            <br>
+            <img src="img/Floatcss.png" class="w3-round" alt="Float Tutorial">
+            <br>
+            <h3>Forms</h3>
+            <p>The final thing I want to go over is styling forms, after all you need something appealing to get users to contact you.</p>
+            <br>
+            <img src="img/Formscss.png" class="w3-round" alt="Forms Tutorial">
+            <br>
+            <p class="padFin">That's all for the CSS chapter, I hope this has introduced you to a lot more. Now you can make your HTML look even better! </p>
+            
+        </div>
+        <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center footer padTopF w3-black">  
+  <div class="w3-large w3-padding-32">
+	 
+	  
+    <a href="http://hueydevelopments.com/" target="_blank"> <img src="img/HueyDevelopments-logo.png" height="10%" width="10%" alt=""></a>
+ </div>
+ 
+</footer>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+        
+    
+        
+    </body>
+</html>

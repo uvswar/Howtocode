@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Guide To HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+    <style>
+        p{
+          font-family: 'Quicksand',sans-serif;
+            font-size:16px;
+        }
+        
+        h1{
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h3{
+        font-family: 'Raleway', sans-serif;
+            
+        }
+		
+		.padTop{
+			padding-top: 5%;
+		}
+    </style>
+        
+        <script>
+            
+        // Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+        </script>
+    </head>
+    <body>
+        
+<div class="w3-container">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="HTML.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HTML</a>
+    <a href="CSS.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CSS</a>
+    <a href="JavaScript.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JavaScript</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navMain" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="HTML.html" class="w3-bar-item w3-button w3-padding-large">HTML</a>
+    <a href="CSS.html" class="w3-bar-item w3-button w3-padding-large">CSS</a>
+    <a href="JavaScript.html" class="w3-bar-item w3-button w3-padding-large">Javascript</a>
+   
+  </div>
+</div>
+<br>
+
+        <div class="w3-container">
+            
+        <h1 class="w3-center padTop">Let's Begin</h1>
+            </div>
+        <div class="w3-container w3-center">
+            <p>In order to begin we need to specify the HTML document in order for the browser to understand what version of HTML you are in. "!DOCTYPE html" is the code we use for HTML(5), the language that makes browser support and coding much easier ! We also have other tags we need to include which includes "html","meta" tags, "head", title", and "body" first before we do anything else. Just make sure you close each tag!</p>
+            </div>
+        
+        <br>
+        <div class="w3-container">
+        <p class="w3-center"> Open your code editor and follow along as we code your first website together.</p>
+        </div>
+        
+         <!-- Insert Getting Started Pciture -->
+        <div class="w3-container w3-center">
+        <img src="img/Getting%20started%20screen%20shot.png" class="w3-round" alt="GettingStarted">
+        </div>
+       <br>
+        
+        <div class="w3-container w3-center">
+        
+        <p>You are proobaly wondering what these tags mean so I'll clarify it for you.  As I mentioned earlier the "!DOCTYPE html" states that your are using HTML(5) coding. The "html" tag specifies the document you are using to start structuring the webpage. After the html tag include the "head" tag which surounds all data that is processed yet unseen on the site itself. The "title" tag specifies your website's title (it is the name in the tab of your current webpage). The "meta charaset" tag which specifies the character encoding for the html document. The "meta name" and the following code allow for responsive webpages. It allows you to create a website that is scaled well on any electronic device. The "body" tag includes all the content of the page, essentially everything that will be seen. 
+            <br></p>
+            <p class="w3-center"> You have officially set up your website now we can begin coding!</p>
+        </div>
+    
+    <div class="w3-container">
+        <h1 class="w3-center">HTML tags</h1>
+        <p class="w3-center"> There are several tags in html but for now let's just go over a few essential ones used for structuring websites and content.</p>
+        </div>
+        <br>
+        <!-- Headings -->
+        <div class="w3-container w3-center">
+        <h3 class="w3-center">Headings</h3>
+        <p>There are six total types of headings. You would typically use "h1" tags to define titles, "h2" to define subtitles, these heading versions range to "h6" where the content seems minimally important. Essentially, the lower the number the higher the font size and boldness.</p><br>
+        <p class="w3-center">For example:</p>
+        
+        </div>
+        <br>
+        
+    <div class="w3-container w3-center">
+        <img src="img/Headings%20tutorial.png" class="w3-round" alt="Types of Headings">
+        </div>
+   <br>
+        
+        <!-- Paragraphs -->
+        
+        <div class="w3-container w3-center">
+        <h3 class="w3-center">Paragraphs</h3>
+            <p> This tag is defined by just "p" it is used to add text under headings mainy but can also be used independently as well. You include the "br" tag to create a line break between to elements or paragraphs.</p><br>
+            <p class="w3-center"> For example:</p>
+        </div>
+        <br>
+        <div class="w3-container w3-center">
+        <img src="img/Paragraphs.png" class="w3-round" alt="Paragraph tutorial">
+        </div>
+    <br>
+        <!-- Images-->
+        
+    <div class="w3-container">
+        <h3 class="w3-center">Images</h3>
+        <p class="w3-center">
+        Images can have alot of impact on your website so make sure they are sized nicely and will show up on several browsers. Use the "img src" tag to include an image in your site. You can adjust the sizing of the image or even add links to it as well. Also make sure that your image has an "alt" tag just in case the image doesn't load properly the client can still read the "caption" of what the image is supposed to be.
+            (Hint: You may also use image sizing in percentages or pixels, I prefer percentages because the proportions remain constant and it's easier for scaling on other devices.)
+        </p>
+        <br>
+        <p class="w3-center"> 
+        For example:
+        </p>
+        </div>
+    
+    <div class="w3-container w3-center">
+        <img src="img/Image%20Tutorial.png" class="w3-round" alt="Image Tutorial">
+        
+        </div>
+    <br>
+        
+        <!-- Links -->
+        
+    <div class="w3-container">
+        <h3 class="w3-center">Links</h3>
+        <p class="w3-center">
+        Links are defined with the "a" tag. While the destination is defined with "href". You may use links to import other webpages and sites, or other content within your same site. 
+        </p>
+        <br>
+        <p class="w3-center">
+        For example:
+        </p>
+        
+        
+        </div>
+        
+        <div class="w3-container w3-center">
+        <img src="img/Links.png" class="w3-round" alt="Link Tutorial">
+        
+        </div>
+        <br>
+    
+        <h1 class="w3-container w3-center">I think you're ready to start a basic website using HTML </h1>
+        
+     
+        <p class="w3-center">
+        So far you have learned about links, images, headings, and paragraphs, let's see if you remember.
+        </p>
+        
+        <p class="w3-center">
+        Here is the code for my website, it includes everything we have learned about so far.
+        </p>
+        
+        
+        <div class="w3-container w3-center">
+        <img src="img/Firstwebsitepicture.png" class="w3-round" alt="First Website Code">
+            
+        </div>
+        
+        <p class="w3-center">
+        Now here is the finished product using only four tags.
+        </p>
+        
+        <div class="w3-container w3-border w3-center">
+        <img src="img/FirstWebsiteOnline.png" class="w3-round" alt="First Website">
+        </div>
+        
+        <p class="w3-container w3-center">
+        Congradulations, you have created a website with all of the essentials. This is a very simple site, soon we'll transform this into something better as we continue through the lessons.
+        </p>
+        
+        <br>
+        
+        <!-- Chapter 2 -->
+        
+        <h1 class="w3-center w3-container"> Chapter 2</h1>
+        
+        <p class="w3-center"> 
+        Let's learn some more tags!
+        </p>
+        
+        <p class="w3-container w3-center">
+        I'm pretty sure you want to "style" your website now to make it look alot better, so let's start with some style tags. These are used for one html element which is considered to be an alternative to a style sheet like CSS. 
+        </p>
+        
+        
+        <div class="w3-container">
+        <h3 class="w3-center">Background color</h3>
+            <p class= "w3-center">
+            The background color tag is written as "background-color" you can attach it to any element.
+            </p>
+            <br>
+            <p class="w3-center">
+            For example:
+            </p>
+
+        </div>
+        
+        <div class="w3-container w3-center">
+        <img src="img/background%20color%20tutorial.png" class="w3-round" alt="background color tutorial">
+            
+            
+        </div>
+        <br>
+        
+        <p class= "w3-center">
+        There are several other styling methods you can use to transform the appearance of your site and the content within. This includes the "color" tag, which manipulates font color. The "font-family" tag which changes types of fonts. The "font-size" tag which increases or decreases text size.
+        </p>
+        <br>
+        
+        <p class="w3-center">
+        For example:
+        </p>
+        
+        <div class="w3-container w3-center">
+        <img src="img/HTML%20stylng%20tutorial.png" class="w3-round" alt="styling tutorial">
+        </div>
+        <br>
+        
+        <p class="w3-center">
+        Those were called in-lined styling you can also create internal styling sheets to make the code look a little cleaner.
+        </p>
+        <br>
+        <p class="w3-center">
+        For example:
+        </p>
+        
+        <div class="w3-container w3-center">
+        <img src="img/Internal%20style%20sheets.png" class="w3-round" alt="internal stylesheet tutorial">
+        </div>
+            <br>
+        
+        <p class="w3-center">
+        We will go deeper into CSS <a href="css.html">here</a>  but for now let's look at a few more html elements..
+        </p>
+        
+        <!-- Tables-->
+        <div class="w3-container">
+        <h3 class="w3-center"> Tables</h3>
+            <p class="w3-center">
+            We use the "table" tag to define a table. Each row is defined with the "tr" tag and each heading is defined with "th". The data of each cell or table is defined with "td".
+            </p>
+            <br>
+            <p class="w3-center">
+            For example:
+            </p>
+            <br>
+        </div>
+        
+        <div class="w3-center w3-container">
+        <img src="img/Table%20tutorial.png" class="w3-round" alt="table tutorial">
+        
+        </div>
+        <br>
+        
+        <!-- Lists-->
+        <div class="w3-container">
+        <h3 class="w3-center">Lists</h3>
+            <p class="w3-center">
+            There are two types of lists, unordered and ordered. In this lesson I will teach you how to create lists and set the style of bullet you want them to have. To define an unordered list you use the "ul" tag. To define an ordered list you use "ol". There are a few html given types of bullets: discs, circle, square ,and none.
+            </p>
+            <br>
+            <p class="w3-center">
+            For example:
+            </p>
+            <br>
+        </div>
+        
+        <div class="w3-center w3-container">
+        <img src="img/Unordered%20List%20tutorial.png" class="w3-round" alt="unordered tutorial">
+        </div>
+        <br>
+        
+        <p class="w3-center">
+        That was an example of an unordered list coding with the default and css styled bullets in-lined.
+        </p>
+        <br>
+        
+        <div class="w3-center w3-container">
+        <p class="w3-center">
+            Ordered list are little bit different. We use the "ol" tag and the bullets are now numbered or "lettered". </p>
+            <ul>
+            <li> We use type='1' tag to list items in numbers.</li>
+                <li>type='A' will list them with uppercase letters. </li>
+                <li> type='a' lists items with lowercase letters.</li>
+                <li> "type'I'" lists items in uppercase roman numbers.</li>
+                <li>  type'i' will list items in lower case roman numbers.</li>
+            
+            
+          
+                </ul>
+            
+        <br>
+        </div>
+        <p class="w3-center">
+        For example:
+        </p>
+        
+        <div class="w3-center w3-container">
+        <img src="img/Ordered%20list%20tutorial.png" class="w3-round" alt="ordered list tutorial">
+        </div>
+        <br>
+        
+        <!-- Div-->
+        
+        <div class="w3-container">
+        <h3 class="w3-center">Dividers</h3>
+            <p class="w3-center">
+            Dividers are reffered to as divs, in fact that's the name of the tag. "divs" allow for the seperation of multiple data within a webpage. You can apply certain css values to content within the div. 
+            </p>
+            <br>
+        </div>
+        <p class="w3-center">
+        For example:
+        </p>
+        <br>
+        
+        <div class="w3-center w3-container">
+        <img src="img/div%20tags%20tutorial.png" class="w3-round" alt="div tag tutorial">
+        </div>
+        <br>
+        
+        <!-- second website-->
+        
+        <p class="w3-center w3-container">
+        Now you have learned a lot! Let's put all of that information into a website. You can continue your original if you would like.
+        </p>
+        <br>
+        
+        
+        <p class="w3-center w3-container">
+            Using the material we learned in this chapter I was able to improve our original website. (Remember this is just the beginning for your website we still have a lot more to add!)
+            </p>
+        
+     <h3 class="w3-center"> Part One</h3>
+        <div class="w3-center w3-container">
+        <img src="img/Chapter%202%20site%20part%201.png" class="w3-round" alt="Part 1 Chapter 2 code">
+        
+        </div>
+        <br>
+        <h3 class="w3-center"> Part Two</h3>
+        
+        <div class="w3-center w3-container">
+        <img src="img/Chapter%202%20site%20part%202.png" class="w3-round" alt=" Part 2 Chapter 2 code">
+        </div>
+        <br>
+    <p class="w3-center">Here is the file for the code I am using to create this website. <a href="HTML%20Beginners%20website.txt" target="_blank">Download here.</a></p>
+        
+        <p class="w3-center">
+        Notice in the two code parts above that I only used the code we have learned so far... Here is my website now.
+        </p>
+        <br>
+        <div class="w3-center w3-container">
+        <img src="img/Chapter%20Two%20Website.png" class="w3-round" alt="Chapter two website">
+        </div>
+        
+        <p class="w3-center">
+        Now that we have established a better foundation on HTML let's move on to the final chapter.
+        </p>
+        <br>
+        
+        <!-- Chapter 3 -->
+        <h1 class="w3-center">
+        Chapter 3
+        </h1>
+        <p class="w3-center">
+        The final topics we are going to cover are forms, navigation menus, and footers.
+        </p>
+        <br>
+        
+        <!-- Navigation -->
+        
+        <div class="w3-center w3-container">
+        <h3 class="w3-center">
+        Navigation menus
+        </h3>
+        <p class="w3-center w3-container">
+        Navigation menus are used to group links together within a page to perform a certain way. Usually they navigate to another page within the website but you can also program them to navigate to divs or sections within the same page. Navigation menus are defined by the "nav" tag.
+        </p>
+        
+           
+        </div>
+         <p class="w3-center">For example:</p>
+        <br>
+        <div class="w3-center w3-container">
+        
+        <img src="img/Navigation%20Menu%20Tutorial.png" class="w3-round" alt="Navigation Menu">
+        </div>
+        <br>
+        
+        <!--Forms -->
+        
+        <div class="w3-center w3-container">
+        <h3 class="w3-center">
+        Forms
+        </h3>
+        
+        <p class="w3-center">
+            Forms are used to collect user input, they include inputs such as first name, last name, maybe check boxes, radio buttons and a submit button. They are simply defined with a "form" tag. In this lesson I'll show you how to create a form to add to the contact page or section of your website.
+            </p>
+        
+        </div>
+        <br>
+        
+        <div class="w3-center w3-container">
+        
+        <img src="img/Form%20Tutorial.png" class="w3-round" alt="Form Tutorial">
+        </div>
+        <br>
+        
+    <div class="w3-center w3-container">
+        <p class="w3-center">
+        Let's go over these tags because this can be a little confusing. The "First Name:" specifies the title of the current input. The "input type" specifies what type of section or box the user in supposed to input. For example the submit type shows a button that submits the data or calls and action. The text type shows a text field for client data. Typically the data would be user added but for educational reasons I added it. <br>
+        </p>
+        <p> That was a basic form let's learn more.</p>
+        </div>    
+
+        <p class="w3-center">
+        There are also other types such as the radio button. The radio button is similar to the checkbox tag. You can use radio buttons to categorize many things.
+            
+        </p>
+        
+        <br>
+        
+        <p class="w3-center">
+        For example:
+        </p>
+        <br>
+        
+        <div class="w3-center w3-container">
+        
+        <img src="img/Radio%20Buttons%20Tutorial.png" class="w3-round" alt="Radio Buttons Tutorial">
+        </div>
+        <br>
+        
+        <p class="w3-center w3-container">
+        Now you're wondering how can I see data inserted into the form...In order to view the data submitted in forms you will have to learned code specifically for backend. These include PHP or SQL, there are several other tutorials who can go more indepth and teach you every single tag but for now you can use 
+            <a href="https://usebasin.com/" target="_target">UseBasin.com</a>. This is a form endpoint creator that collects submission data without backend coding, everything goes directly to your email. They even offer action pages for POST and GET tags. Investigate more into it and you'll be happy I reccomended you to them!
+        </p>
+        
+        <br>
+        
+        <!-- Headers and Footer -->
+        
+        <div class="w3-center w3-container">
+        <p> There's only two more tags I want to show you so that you can make your website completely using only HTML! Those are the header and the footer tags. We use the header tag at the very top of the page your logo, navigation menu, and even titles may go into them. We use footers to conclude the website, these go at the very bottom of the page and may include trademarks, authors, or contact information.</p>
+            
+            
+        
+        </div>
+        
+        <br>
+        
+        <p class="w3-center">
+        For example:
+        </p>
+        <br>
+        <div class="w3-center w3-container">
+        <img src="img/Header%20and%20Footer%20Tutorial.png" class="w3-round" alt="Header and Footer Tutorial">
+        
+        </div>
+        <br>
+        
+        <div class="w3-center w3-container">
+        <p> Here are a few tags that aren't as big but provide a little assistance. The "br" tag starts a line break. The comment tag is a section where you can mark or organize certain elements and content. I tend to use comments before I start sections or to explain what a certain code is doing to keep is organized. This is how you create one... </p>
+            <br>
+            
+            <img src="img/Comments%20Tutorial.png" class="w3-round" alt="Comments Tutorial">
+            
+            <p> Notice the grey words , those are comments they are in your code but don't show up on the Website itself.</p>
+        </div>
+        <br>
+        
+        <h1 class="w3-center"> Final Website</h1>
+        
+        <div class="w3-center w3-container">
+        <p> Now using only HTML let's finalize your website.</p>
+            <br>
+            <p>Here is my code for the final product, yours can be similar or you can switch a few things up. It's okay to copy code although make sure you change the information to your pleasing.
+        </p>
+            <br>
+            
+            <!-- Start Final HTML Project Tutorial -->
+            
+            
+            <img src="img/First%20Website%20Part%201.png" class="w3-round" alt="Final HTML Project">
+            </div>
+            <br>
+            
+         <div class="w3-center w3-container">
+             
+            <img src="img/First%20Website%20Part%202.png" class="w3-round" alt="Final HTML Project Part 2">
+        </div>
+        <br>
+        
+        
+         <div class="w3-center w3-container">
+             <img src="img/First%20Website%20Part%203.png" class="w3-round" alt="Final HTML Project Part 3">
+        </div>
+        <br>
+        
+         <div class="w3-center w3-container">
+             <img src="img/First%20Website%20Part%204.png" class="w3-round" alt="Final HTML Project Part 4">
+        </div>
+        <br>
+    <p class="w3-center">You can download the files used in the project <a href="HTML%20Website%20code.txt" target="_blank">here</a> for code references.</p>
+            
+        <p class="w3-center w3-container">Now let's check out how the final website looks using only one HTML document.</p>
+        <br>
+       
+    
+        
+        <!-- IFRAME--> 
+        <div class="w3-container w3-center">
+        <iframe height="1000px" width="1000px" src="FirstWebsite.html"></iframe>
+        </div>
+        
+        <!--- end -->
+        
+        
+       <br>
+            
+           <div class="w3-container w3-center">
+               <h1> Congratulations!!!</h1>
+               <h3> You coded an entire website that is fully functional all by yourself</h3>
+               <p>(Not to mention it was from scratch...)</p>
+        <p> Remember this website did not only use the language HTML, we only used one HTML document. We included CSS and you probaly didn't know it! Now that you are somewhat familiar let's move on to actual CSS tutorials to gain a better knowledge of the language.</p>
+        </div>
+            <br>
+        
+        <div class="w3-center">
+        <h1 class="w3-jumbo"><a href="CSS.html">Let's Go >>></a></h1>
+        </div>
+        
+        </div>
+        
+        <!-- Footer -->
+
+<footer class="w3-container w3-padding-64 w3-center footer padTopF w3-black">  
+  <div class="w3-large w3-padding-32">
+	 
+	  
+    <a href="http://hueydevelopments.com/" target="_blank"> <img src="img/HueyDevelopments-logo.png" height="10%" width="10%" alt=""></a>
+ </div>
+ 
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+    </body>
+    
+
+    
+    
+    
+</html>

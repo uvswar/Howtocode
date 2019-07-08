@@ -1,0 +1,25 @@
+/* Styling */
+
+
+h1 {
+    font-family: sans-serif; /* Able to import fonts from google at www.googlefonts.com */
+    
+        font-size: 25px;
+    
+    color:blue;
+    
+    text-align: center;
+    
+    word-spacing: 10px;
+    
+            
+    
+}
+
+p {
+    text-transform: capitalize; /* Capitalize first letter of each word */
+    
+        text-transform: lowercase; /* lowercase every letter */
+    
+    text-transform: uppercase; /* upper case every letter */
+}

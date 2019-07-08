@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Guide To JavaScript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+    <style>
+        p{
+          font-family: 'Quicksand',sans-serif;
+            font-size:16px;
+			text-align: center;
+        }
+		
+		.footer{
+			background-color: black;
+		}
+        
+        h1{
+            font-family: 'Raleway', sans-serif;
+			text-align: center;
+        }
+        
+        h3, h4{
+        font-family: 'Raleway', sans-serif;
+			text-align: center;
+            
+        }
+		
+		h3, h4 .padTopH{
+			padding-top: 2%;
+		}
+		
+		
+		.padTop{
+			padding-top: 5%;
+		}
+		.padTopF{
+			padding-top: 7%;
+		}
+        
+		.padTopH{
+			padding-top: 2%;
+		}
+		
+		.padFin{
+			padding-bottom: 5%
+		}
+    </style>
+        
+        <script>
+            
+        // Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+        </script>
+    </head>
+    <body>
+        
+<div class="w3-container">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../../../Downloads/How to code real/How to code/index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="../../../Downloads/How to code real/How to code/HTML.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HTML</a>
+    <a href="../../../Downloads/How to code real/How to code/CSS.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CSS</a>
+    <a href="../../../Downloads/How to code real/How to code/JavaScript.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JavaScript</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navMain" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="../../../Downloads/How to code real/How to code/HTML.html" class="w3-bar-item w3-button w3-padding-large">HTML</a>
+    <a href="../../../Downloads/How to code real/How to code/CSS.html" class="w3-bar-item w3-button w3-padding-large">CSS</a>
+    <a href="../../../Downloads/How to code real/How to code/JavaScript.html" class="w3-bar-item w3-button w3-padding-large">Javascript</a>
+   
+  </div>
+</div>
+<br>
+<!-- End Nav -->
+    
+     <div class="w3-container padTop w3-center">
+           
+        <h1 class="w3-center padTopH">Let's Begin</h1>
+		 <p>After this tutorial you will understand the three main languages every web developer must know: HTML, CSS, and JavaScript. JavaScript is the behavior of websites.</p>
+		 <p>There are tons of cool things you can create using javascript, and I'm going to teach you a few things to start your js journey.</p>
+		 <h3>Method</h3>
+		 <p>One of the most common methods in JavaScript is 'getElementById()'. Basically allowing you to assign an element to a script. You can use the method for various alterations in your code such as:</p>
+		 
+		 
+		 	 <p>- Change HTML Content</p>
+			 <p>- Change HTML Attribute Values</p>
+			 <p>- Change HTML Styles</p>
+			 <p>- Hide HTML Elements</p>
+			 <p>- Show HTML Elements</p>
+			
+		
+		 
+		 <h4>Change HTML Content</h4>
+		 <p>'document.getElementById("Heading").innerHTML = "Hello JavaScript!"'</p>
+		 
+		 <h4>Change HTML Attribute Values</h4>
+		 <p>'document.getElementById('heroImage').src="newHeroImage.jpg"'</p>
+		 
+		 <h4>Change HTML Styles</h4>
+		 <p>document.getElementById("Heading").style.fontSize = "35px";</p>
+		 
+		 <h4>Show HTML Elements</h4>
+		 <p>document.getElementById("submitButton").style.display = "block";</p>
+		 
+		 <h4>Hide HTML Elements</h4>
+		 <p>document.getElementById("submitButton").style.display = "none";</p>
+            </div>
+	
+<h3>Implementing</h3>
+	<p>Now that you know what ways you can use javascript I'm going to show you how to implement them in your code.</p>
+	<p>You will use the script tag to define your js code in. Unlike CSS you can place scripts in the head or body. For example:</p>
+	
+	<img src="img/Annotation.png" alt="js implement">
+	
+	<h3>Functions</h3>
+	<p>Define functions in the 'head' section of an HTMl page. For example:</p>
+	
+	<img src="img/jsFunction.png" alt="functions">
+	
+	<h3>External JavaScript</h3>
+	<p>You can place scripts in external files prior to your HTML file. For example:</p>
+	
+	<img src="img/externalscript.png" alt="external script">
+	
+	<h3>Displaying JavaScript</h3>
+	<p>You can display your script in several different ways:</p>
+	
+	<ul>
+	<li>Writing into an HTML element</li>
+		<li>Writing into the HTML output</li>
+		<li>Writing into an alert box</li>
+		<li>Writing into the console</li>
+	</ul>
+
+	<h3>Write into an HTML element</h3>
+	<img src="img/resultInner.png" alt="result inner">
+	<p>The script should display:</p>
+	<img src="img/resultInneroutput.png" alt="result inner output">
+	
+	<h3>Write into HTML output</h3>
+	<img src="img/docWrite.png" alt="docWrite">
+	<p>The script should display:</p>
+	<img src="img/docWriteoutput.png" alt="doc write output">
+	
+	<h3>Write into an alert box</h3>
+	<img src="img/viewAlert.png" alt="view alert">
+	
+	<h3>Write into the console</h3>
+	<img src="img/consolelog.png" alt="console log">
+	<p>By using this, data will be displayed into the console. You can view this by pressing f12 in the browser.</p>
+	
+	<h3>Statements</h3>
+	<p>These are the instructions in the script that will be executed.</p>
+	<img src="img/jsstatements.png" alt="js statements">
+	<p>The following should output the following:</p>
+	<img src="img/jsstatementsoutput.png" alt="js statements output">
+	<p>Seperate each statement with semicolons just as you do in CSS.</p>
+	
+	<h3>Variables</h3>
+	<p>These store data values and can be declared with the 'var' keyword.</p>
+	
+	<h3>Operators</h3>
+	<p>There are numerous operators. </p>
+	<ul>
+	<li>Arithmetic Operators</li>
+		<li>Assignment Operators</li>
+	</ul>
+	
+	<h3>Arithmetic Operators</h3>
+	<p>Using the '+', '-', '*', and '/' you can compute values.</p>
+	<img src="img/arithmeticjs.png" alt="arithmetic js">
+	
+	<h3>Assignment Operators</h3>
+	<p>Use the '=' to assign values to variables.</p>
+	<img src="img/assignmentjs.png" alt="assignment js">
+	
+	<h3>Expressions</h3>
+	<p>These can contain numbers, variables or strings. Strings are a collection of characters essentially.</p>
+	
+	<p>Number Example:</p>
+	<img src="/img/numberEX.png" alt="number Example">
+	
+	<p>String Example:</p>
+	<img src="img/stringEX.png" alt="string example">
+	
+	<p>Variable Example:</p>
+	<img src="img/varEX.png" alt="var example">
+	
+	<h3>Syntax</h3>
+	<p>JavaScript is case sensitive. The variables 'newResult' and 'newresult' are two different variables.</p>
+	<img src="img/syntaxEX.png" alt="syntax example">
+	
+	<h3>Data Types</h3>
+	<p>You can use numbers, strings, objects and many more as types for your script.</p>
+	
+	<h3>Strings</h3>
+	<p>You write strings with quotes they can be written within single or double quotes.</p>
+	
+	<img src="img/stringsData.png" alt="strings data type">
+	
+	<h3>Numbers</h3>
+	<p>You can write numbers with or without decimals.</p>
+	<img src="img/numbersdata.png" alt="numbers data type">
+	
+	<h3>Booleans</h3>
+	<p>Use boolens to incorporate 'true' or 'false' values.</p>
+	<img src="img/booldata.png" alt="bool data types">
+	
+	<p>After the code executes it should output the following:</p>
+	<img src="img/booloutput.png" alt="bool output">
+	
+	<h3>Arrays</h3>
+	<p>You write arrays within square brackets and seperate them with commas. Array indexes are zero-based, when mean that the first item in the list is [0], and the second is [1], and so on. The code down below declares an array called 'cityNames', and contains three items. The first city is output by the 'cityNames[0]'. </p>
+	
+	<img src="img/arraysjs.png" alt="">
+	
+	<p>This was just a brief introduction to arrays we will talk about them later in the tutorial a bit more in depth.</p>
+	
+	<h3>Objects</h3>
+	<p>Write objects within curly braces. They have properties that are seperated by commas.</p>
+	
+	<img src="img/objectsjs.png" alt="">
+	
+	<p>The previous code outputs:</p>
+	<img src="img/objectsjsoutput.png" alt="">
+	
+	<h3>Null</h3>
+	<p>Basically this object sets something to nothing. You can also use it to empty an object.</p>
+	<img src="img/nulljs.png" alt="">
+	
+	<p>The previous code gets output to:</p>
+	<img src="img/nulljsoutput.png" alt="">
+	
+	<h3>Functions</h3>
+	<p>A function is block of code that performs a designated task.</p>
+	<img src="img/functionsjs.png" alt="">
+	<p>The code should output:</p>
+	<img src="img/functionsjsoutput.png" alt="">
+	
+	<h4>Syntax of Functions</h4>
+	<p>Use this snippet as a template for creating functions.</p>
+	<img src="img/functiontemplate.png" alt="">
+	
+	<h4>Return Statements</h4>
+	<p>When a function is called, the code in the function is returned.</p>
+	<img src="img/returnjs.png" alt="">
+	
+	<h3>Events</h3>
+	<p>An event is something a browser does, or something the user does.</p>
+	<ul>
+		<li>onchange = an HTML element has been changed</li>
+		<li>onclick = The user clicks an HTML element</li>
+		<li>onmouseover = The user moves the mouse over an HTML element</li>
+		<li>onmouseout = The user moves the mouse away from an HTML element</li>
+		<li>onkeydown =	The user pushes a keyboard key</li>
+		<li>onload = The browser has finished loading the page</li>
+	</ul>
+	
+	<h4>Onclick</h4>
+	<p>The following code creates a button and when clicked reveals the current time</p>
+	<img src="img/onclickjs.png" alt="">
+	
+	<p>This is the output before the button is clicked:</p>
+	<img src="img/onclickbefore.png" alt="">
+	<p>This is the output after the button is clicked:</p>
+	<img src="img/onclickafter.png" alt="">
+	
+	<h3>Methods</h3>
+	<p>These help you create more complicated results from a vareity of data types including: strings, arrays, numbers, dates and more.</p>
+	
+	<h4>String Methods</h4>
+	<p>A few string properties.</p>
+	
+	<h5>String Length</h5>
+	<p>returns the length of a string:</p>
+	<img src="img/stringlength.png" alt="">
+	
+	<h5>Finding a string in a string</h5>
+	<p>Counts the position from 0 until it reaches the first character of the string.</p>
+	<img src="img/findstring.png" alt="">
+	
+	<h5>Replacing a string</h5>
+	<p>Use the 'replace()' method to replace a specified string.</p>
+	<img src="img/replacejs.png" alt="">
+	<p>The previous code replaces the first instance of 'HTML' with 'JavaScript', using the 'replace()' method and 'onClick' event we went over earlier.</p>
+	
+	<p>The 'replace()' method is case sensitive to replace insensitive use '/i'</p>
+	<img src="img/insensitivejs.png" alt="">
+	
+	<p>To replace all instances of the string use '/g'</p>
+	<img src="img/globalmatch.png" alt="">
+	
+	<h5>Converting strings to upper or lower case</h5>
+	
+	<p>You use the 'toUpperCase()' method to convert to all upper case</p>
+	<img src="img/upper case.png" alt="">
+	
+	<p>You use the 'toLowerCase()' method to convert to all lower case</p>
+	<img src="img/lowercase.png" alt="">
+	
+	<h5>Concat</h5>
+	<p>You can use 'concat()' method to join two or more strings.</p>
+	<img src="img/concat.png" alt="">
+	<p>The previous code outputs:</p>
+	<img src="img/concatoutput.png" alt="">
+	
+	<h5>String Trim</h5>
+	<p>The 'trim()' method trims or removes whitespace from both sides of the string.</p>
+	<img src="img/trim.png" alt="">
+	
+	<h5>charAt()</h5>
+	<p>This methods returns the character at a specific position in a strig.</p>
+	<img src="img/charAt.png" alt="">
+	<p>The code should return 'W' as it is represented as the (0) spot.</p>
+	
+	<h5>Converting strings to array</h5>
+	<p>The string is converted into an array the 'arr[0]' specifies the first position, arr[1] specifies the second.</p>
+	<img src="img/stringtoarray.png" alt="">
+	
+	<h3>Number Methods</h3>
+	
+	<h5>toString() Method</h5>
+	<p>Returns a number as a string.</p>
+	<img src="img/tostring.png" alt="">
+	<p>There are several ways to write the toString Method the previous code is output to:</p>
+	<img src="img/tostringoutput.png" alt="">
+	
+	<h5>toFixed() Method</h5>
+	<p>This method returns a string with a fixed number of decimals.</p>
+	<img src="img/tofixed.png" alt="">
+	<p>The code is output to:</p>
+	<img src="img/tofixedoutput.png" alt="">
+	
+	<h5>toPrecision() Method</h5>
+	<p>This method returns a string, and can be written with a specific length.</p>
+	<img src="img/toprecision.png" alt="">
+	<p>The previous code output to:</p>
+	<img src="img/toprecice.png" alt="">
+	
+	<h3>Array Methods</h3>
+	<p>You can also use array methods to manipulate arrays.</p>
+	
+	<h5>toString()</h5>
+	<p>Converts an array to a string</p>
+	<img src="img/tostringarray.png" alt="">
+	
+	<h5>popMethod()</h5>
+	<p>The pop method can remove the last element from the array and return the value that was removed.</p>
+	
+	<img src="img/popMethod.png" alt="">
+	<p>The last element has been removed.</p>
+	
+	
+	<img src="img/popreturn.png" alt="">
+	<p>The removed element is returned.</p>
+	
+	<h5>push() Method</h5>
+	<p>This method adds a new element to the array at the latest index and can return the new array length.</p>
+	
+	<img src="img/pushmethod.png" alt="">
+	
+	<h5>shift() Method</h5>
+	<p>Shifting is similar to the pop method although it works on the first element instead, by removing the first element and shifting the others to a smaller index.</p>
+	
+	<h3>Array Sorting</h3>
+	<p>You can also sort arrays.</p>
+	
+	<h5>sort() Method</h5>
+	<p>You can use this method to sort an array alphabetically.</p>
+	<img src="img/sortmethod.png" alt="">
+	
+	
+	<h5>reverse() Method</h5>
+	<p>You use this to reverse the elements in an array. You can also pair it with sort method to sort in a descending order.</p>
+	<img src="img/reverse method.png" alt="">
+	
+	
+	<h3>Math in JavaScript</h3>
+	<p>This section will be pretty straight forward.</p>
+	
+	<h5>Math.round</h5>
+	<p>This method rounds the value of x to the nearest integer.</p>
+	<img src="img/mathround.png" alt="">
+	
+	<h5>Math.pow</h5>
+	<p>This methods returns the value of x to the power of y.</p>
+	<img src="img/mathpow.png" alt="">
+	
+	<h5>Math.abs</h5>
+	<p>This method returns the absolute value.</p>
+	<img src="img/mathabs.png" alt="">
+	
+	<h5>Math.sqrt</h5>
+	<p>This method returns the square root of x.</p>
+	<img src="img/mathsqrt.png" alt="">
+	
+	<h5>Math.ceil</h5>
+	<p>This method retuns the value of x rounded up to its nearest integer.</p>
+	<img src="img/mathceil.png" alt="">
+	
+	<h5>Math.floor</h5>
+	<p>This method retuns the value of x down up to its nearest integer.</p>
+	<img src="img/mathfloor.png" alt="">
+	
+	<h5>Math.min</h5>
+	<p>This method is used to find the lowest value in a list.</p>
+	<img src="img/mathmin.png" alt="">
+	
+	<h5>Math.max</h5>
+	<p>This method is used to find the highest value in a list.</p>
+	<img src="img/mathmax.png" alt="">
+	
+	<h3>Random in JavaScript</h3>
+	<p>You can use Math.random() to return a random number.</p>
+	<img src="img/mathrand.png" alt="">
+	
+	<h3>Booleans</h3>
+	<p>You can use the greater than, less than, and equal to signs.</p>
+	<img src="img/booltrue.png"	alt="">
+		<p>Will return true.</p>
+	<img src="img/boolfalse.png" alt="">
+	<p>Will return false.</p>
+	<img src="img/boolequal.png" alt="">
+	<p>Will return true.</p>
+		 
+		
+		
+	<h3>Comparisons</h3>
+	<p>You can use these to compare variables or values.</p>
+	
+	<h5>equal to</h5>
+	<img src="img/equalto.png" alt="">
+	
+	<h5>not equal</h5>
+	<img src="img/notequal.png" alt="">
+	
+	<h5>greater than</h5>
+	
+	<h5>less than</h5>
+	
+	<h5>greater than or equal to</h5>
+	<img src="img/greaterequal.png" alt="">
+	
+	<h5>less than or equal to</h5>
+	<img src="img/lessthanequal.png" alt="">
+	
+	<h5>'&&'</h5>
+	<p>'and' operator, must be true for both comparisons otherwise returns false.</p>
+	<img src="img/andoperator.png" alt="">
+	
+	<h5>'||'</h5>
+	<p>'or' operator, returns true if atleast one of the comparisons is true.</p>
+	<img src="img/oroperator.png" alt="">
+	
+	<h5>'!'</h5>
+	<p>'not operator, returns true for false statements and false for true statements.</p>
+	<img src="img/notoperator.png" alt="">
+	
+	<h3>Conditions</h3>
+	<p>These statements perform different actions based on their condition.</p>
+	
+	<h5>if / else </h5>
+	<p>You can use the 'if' / 'else' conditions to specify what happens when a condition is true and when one is false.</p>
+	<img src="img/ifelse.png" alt="">
+	
+	<h5>else if</h5>
+	<p>You can also use 'else if' condition to test a new condition if the first condition is false.</p>
+	<img src="img/elseif.png" alt="">
+	
+	<h3>Switch Statements</h3>
+	<p>Use switch to select one of several code blocks to be executed.</p>
+	<img src="img/switch statements.png" alt="">
+	<p>Use the break keyword to break out of the statements and moves on out of the switch.</p>
+	
+	<p>Use the default keyword to specify what happens if none of the switch statements are true.</p>
+	
+	<img src="img/default.png" alt="">
+	
+	<h3>Loops</h3>
+	
+	<h5>for loop</h5>
+	<p>Loops through a block of code a specific number of times.</p>
+	
+	<img src="img/forloop.png" alt="">
+	<p>The first statement 'i = 0', starts the loop off at '0'. The second statement, maxes the loop to less than or equal to 5, the final statement '++' counts by one until end of the loop which is the max of 5.</p>
+	
+	<img src="img/forloopoutput.png" alt="">
+	
+	
+	<h5>while loop</h5>
+	<p>Loops through a block of code while the condition is true.</p>
+	<img src="img/whileloop.png" alt="">
+	<p>The previous code is output to:</p>
+	<img src="img/whileloopoutput.png" alt="">
+	
+	<h5>do/while loops</h5>
+	<p>Loops through a block of code while the condition is true.</p>
+	<img src="img/dowhile.png" alt="">
+	<p>The previous code is output to:</p>
+	<img src="img/whileloopoutput.png" alt="">
+	
+	<h1>That's all!</h1>
+	<p class="padFin">You have completed the tutorial. Now go out there and make some more websites!</p>
+	
+	
+		
+        <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center footer padTopF">  
+  <div class="w3-large w3-padding-32">
+	 
+	  
+    <a href="http://hueydevelopments.com/" target="_blank"> <img src="img/HueyDevelopments-logo.png" height="10%" width="10%" alt=""></a>
+ </div>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navMain");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+		</div>
+    </body>
+</html>
